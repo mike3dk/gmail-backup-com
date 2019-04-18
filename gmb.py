@@ -61,11 +61,14 @@ try:
 except ImportError:
     from md5 import md5
 
-GMB_REVISION = u'$Revision$'
-GMB_DATE = u'$Date$'
+# GMB_REVISION = u'$Revision$'
+# GMB_DATE = u'$Date$'
 
-GMB_REVISION = GMB_REVISION[11:-2]
-GMB_DATE = GMB_DATE[7:-2].split()[0]
+# GMB_REVISION = GMB_REVISION[11:-2]
+# GMB_DATE = GMB_DATE[7:-2].split()[0]
+
+GMB_REVISION = '110'
+GMB_DATE = '2019-04-17'
 
 SPEED_AVERAGE_TIME = 21 # speed average over the last x seconds
 SOCKET_TIMEOUT = 60 # timeout for socket operations

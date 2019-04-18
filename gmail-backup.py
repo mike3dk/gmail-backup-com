@@ -26,11 +26,14 @@ from svc.scripting import *
 from gmb import ConsoleNotifier, _convertTime, GMailBackup, GMB_REVISION, GMB_DATE, imap_decode, imap_encode
 import sys
 
-GMB_CMD_REVISION = u'$Revision$'
-GMB_CMD_DATE = u'$Date$'
+# GMB_CMD_REVISION = u'$Revision$'
+# GMB_CMD_DATE = u'$Date$'
 
-GMB_CMD_REVISION = GMB_CMD_REVISION[11:-2]
-GMB_CMD_DATE = GMB_CMD_DATE[7:-2].split()[0]
+# GMB_CMD_REVISION = GMB_CMD_REVISION[11:-2]
+# GMB_CMD_DATE = GMB_CMD_DATE[7:-2].split()[0]
+
+GMB_CMD_REVISION = '110'
+GMB_CMD_DATE = '2019-04-17'
  
 MAX_REVISION = str(max(int(GMB_CMD_REVISION), int(GMB_REVISION)))
 MAX_DATE = max(GMB_CMD_DATE, GMB_DATE)
