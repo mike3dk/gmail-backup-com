@@ -121,4 +121,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# others
 ArchivedEmails/
+.DS_Store
+

@@ -116,8 +116,9 @@ def _getMailIMAPDate(mail):
     return d
 
 def _convertTime(t):
-    t = time.mktime(time.strptime(t, '%Y%m%d'))
-    return imaplib.Time2Internaldate(t)
+    return time.strftime('%d-%b-%Y', time.strptime(t, '%Y%m%d'))
+    # t = time.mktime(time.strptime(t, '%Y%m%d'))
+    # return imaplib.Time2Internaldate(t)
 
 def _convertTimeToNum(t):
     t = time.mktime(time.strptime(t, '%Y%m%d'))
